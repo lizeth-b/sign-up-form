@@ -20,6 +20,12 @@ main {
 
 h1 {
   font-family: 'Borel', cursive;
+  font-size: 40px;
+
+  svg {
+    vertical-align: -5px;
+    margin-right: 5px;
+  }
 }
 
 .pitch-container {
