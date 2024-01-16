@@ -18,7 +18,11 @@ main {
   height: 100vh;
 }
 
-h1 {
+button {
+  cursor: pointer;
+}
+
+.logo {
   font-family: 'Borel', cursive;
   font-size: 40px;
 
