@@ -15,21 +15,12 @@
 
 main {
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
 }
 
 button {
   cursor: pointer;
-}
-
-.logo {
-  font-family: 'Borel', cursive;
-  font-size: 40px;
-
-  svg {
-    vertical-align: -5px;
-    margin-right: 5px;
-  }
 }
 
 .pitch-container {
@@ -38,8 +29,18 @@ button {
   background: var(--color-main-bg);
   color: var(--color-main-text);
 
-  > * {
-    margin: 1rem;
+  .pitch {
+    margin: 32px;
+
+    .logo {
+      font-family: 'Borel', cursive;
+      font-size: 2.5rem;
+    
+      svg {
+        vertical-align: -5px;
+        margin-right: 5px;
+      }
+    }
   }
 }
 
@@ -47,15 +48,18 @@ button {
   display: flex;
   place-items: center;
   background: var(--color-secondary-bg);
-}
-
-.sign-up {
-  margin: 1rem;
-  display: flex;
-  flex-wrap: wrap;
   color: var(--color-secondary-text);
 
-  label {
-    flex: 35%;
+  .form {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    .sign-up {
+      margin: 16px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
